@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Personal Book Library</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body align ="center" bgcolor="pink">
+    <!-- Navigation Bar -->
+    <nav class="navbar">
+        <div class="container">
+            <h1 class="logo">My Book Library</h1>
+            <ul type="none">
+                <li><a href="#home">Home</a></li>
+                <li><a href="#categories">Categories</a></li>
+                <li><a href="#books">Books</a></li>
+                <li><a href="#history">History</a></li>
+            </ul>
+        </div>
+    </nav>
+
+    <div class="container">
+        <!-- Search Bar -->
+        <div class="search-bar">
+            <input type="text" id="search" placeholder="Search for a book...">
+            <button onclick="searchBook()">Search</button>
+        </div>
+
+        <!-- Categories -->
+        <div class="categories" id="categories">
+            <h2>Categories</h2>
+            <ul id="category-list" type="none">
+                <!-- Categories will be populated here -->
+            </ul>
+        </div>
+
+        <!-- Book List -->
+        <div class="book-list" id="books">
+            <h2>Books</h2>
+            <div id="book-list" class="book-grid">
+                <!-- Books with covers will be populated here -->
+            </div>
+        </div>
+
+        <!-- Borrowing History -->
+        <div class="history" id="history">
+            <h2>Borrowing History</h2>
+            <ul type="none" id="history-list">
+                <!-- Borrowing history will be populated here -->
+            </ul>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
